@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Calculate Your Age Precisely</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="header">
+                <h1><i class="fas fa-calculator"></i> Age Calculator</h1>
+                <p>Calculate your age in years, months, days, hours, minutes, and seconds</p>
+            </div>
+            
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="date">
+                        <i class="fas fa-calendar-alt"></i>
+                        Select your birth date
+                    </label>
+                    <input type="date" id="date" required>
+                </div>
+                <button onclick="calculateAge()" class="calculate-btn">
+                    <i class="fas fa-calculator"></i>
+                    Calculate Age
+                </button>
+            </div>
+
+            <div id="error-message" class="error-message"></div>
+            
+            <div id="result" class="result-container"></div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Precise Calculation</h3>
+                    <p>Get your exact age down to the second</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Works perfectly on all devices</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Multiple Formats</h3>
+                    <p>View age in different time units</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
